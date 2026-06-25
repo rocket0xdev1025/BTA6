@@ -125,7 +125,7 @@
   });
 
   /* ---- Parallax ---- */
-  const heroImage = document.querySelector(".hero-image");
+  const heroVideo = document.querySelector(".hero-video");
   const parallaxBgs = document.querySelectorAll(".parallax-bg");
 
   let ticking = false;
@@ -133,9 +133,9 @@
   function parallax() {
     const scrollY = window.scrollY;
 
-    if (heroImage) {
+    if (heroVideo) {
       const scale = 1 + Math.min(scrollY * 0.0001, 0.08);
-      heroImage.style.transform = `scale(${scale}) translateY(${
+      heroVideo.style.transform = `scale(${scale}) translateY(${
         scrollY * 0.25
       }px)`;
     }
