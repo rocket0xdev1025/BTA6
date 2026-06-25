@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="$BTA6 — 币安开发世界 meme token on BSC. Binance City vibes. Zero tax. Liquidity burnt. Ownership renounced."
+    />
+    <title>$BTA6 | 币安开发世界 — Meme Token</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-cdn="/media/">
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#hero" class="logo">
+          <span class="logo-icon">◆</span>
+          <span class="logo-text">$BTA6</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#contract">Contract</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+        <a
+          href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon"
+          class="btn btn-primary btn-glow btn-nav"
+          data-link="uniswap"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Buy Now</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <picture class="hero-picture">
+            <source
+              media="(max-width: 768px)"
+              srcset="/media/mobile.0mi46.hy2kwfa.jpg?akim=1&imwidth=828"
+            />
+            <img
+              class="hero-image"
+              src="/media/desktop.00.5pzu2sm-z4.png"
+              alt="Binance City sunset skyline at dusk"
+              fetchpriority="high"
+            />
+          </picture>
+          <div class="hero-overlay"></div>
+          <div class="hero-vignette" aria-hidden="true"></div>
+          <div class="scanlines" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-content container">
+          <div class="hero-badge reveal">
+            <span class="pulse-dot"></span>
+            LIVE ON BSC
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line title-top">币安开发世界</span>
+            <span class="title-line title-main" data-text="$BTA6">$BTA6</span>
+          </h1>
+          <p class="hero-tagline reveal">
+            Welcome to the sunniest place in crypto. Zero tax. Locked LP.
+            Renounced.
+            <br />The streets of Binance City are calling.
+          </p>
+          <div class="hero-stats reveal">
+            <div class="stat-pill">
+              <span class="stat-label">Chain</span>
+              <span class="stat-value">BSC</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-label">Tax</span>
+              <span class="stat-value">0 / 0</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-label">Supply</span>
+              <span class="stat-value">1B</span>
+            </div>
+          </div>
+          <div class="hero-cta reveal">
+            <a
+              href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon"
+              class="btn btn-primary btn-glow"
+              data-link="uniswap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Buy $BTA6</span>
+            </a>
+            <a href="#contract" class="btn btn-secondary">Copy Contract</a>
+          </div>
+          <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CINEMATIC BANNER -->
+      <section class="cinematic-banner" id="cinematic">
+        <div class="cinematic-bg parallax-bg" data-speed="0.3">
+          <img
+            src="/media/poster_full.02ig6s_80ei58.jpg?akim=1&imwidth=2560"
+            alt="CZ and HeYi — Binance City"
+            loading="lazy"
+          />
+        </div>
+        <div class="cinematic-overlay"></div>
+        <div class="cinematic-content container reveal">
+          <span class="section-tag">// Binance City</span>
+          <h2 class="cinematic-title">
+            The darkest side of the
+            <span class="gradient-text">sunniest place</span> in crypto.
+          </h2>
+          <p>
+            CZ and HeYi energy. Degens with a plan. Welcome to 币安开发世界 —
+            on-chain.
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">// THE LORE</span>
+            <h2 class="section-title">
+              Binance City, <span class="gradient-text">On-Chain</span>
+            </h2>
+          </div>
+          <div class="about-grid">
+            <div class="glass-card image-card reveal">
+              <div class="card-image">
+                <img
+                  src="/media/Vice_City_01.135x56yoeu.6t.png"
+                  alt="Binance City neon streets"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Sunniest Scam in America</h3>
+                <p>
+                  CZ and HeYi energy, but you're holding bags in neon
+                  paradise. $BTA6 is the meme coin for everyone who knows the
+                  deck is stacked — and apes anyway.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card image-card reveal">
+              <div class="card-image">
+                <img
+                  src="/media/Jason_Duval_03.0-1vum7x-3vtp.png"
+                  alt="Jason Duval character portrait"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Built Different</h3>
+                <p>
+                  No dev wallet drama. Liquidity burnt. Contract renounced. Just
+                  pure Binance City degeneracy on BSC mainnet.
+                </p>
+              </div>
+            </div>
+            <div class="glass-card image-card reveal">
+              <div class="card-image">
+                <img
+                  src="/media/Lucia_Caminos_06.0fxbjfk0jakb3.png"
+                  alt="Lucia Caminos character portrait"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Diamond Hands Only</h3>
+                <p>
+                  0% buy tax. 0% sell tax. The only thing getting rugged is your
+                  sleep schedule when the chart goes parabolic at 3 AM.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section gallery" id="gallery">
+        <div class="gallery-banner parallax-bg" data-speed="0.2">
+          <img
+            src="/media/onlyInLeonidaDesktop.15y2n40f3axwo.png"
+            alt="Only in Leonida — panoramic Binance City vista"
+            loading="lazy"
+          />
+          <div class="gallery-banner-overlay"></div>
+          <div class="gallery-banner-text container">
+            <span class="section-tag reveal">// ONLY IN LEONIDA</span>
+            <h2 class="section-title reveal">
+              People &amp; <span class="gradient-text">Places</span>
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="gallery-grid">
+            <figure class="gallery-item reveal gallery-item--wide">
+              <img
+                src="/media/Vice_City_02.0c5.7qx17u9kl.jpg?akim=1&imwidth=1280"
+                alt="Binance City oceanfront skyline"
+                loading="lazy"
+              />
+              <figcaption>Binance City Skyline</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/Vice_City_05.0~r~o0jzpp4a-.png"
+                alt="Neon-lit Binance City street at night"
+                loading="lazy"
+              />
+              <figcaption>Neon Nights</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/Vice_City_07.0b3mhak4k78oh.png"
+                alt="Binance City beach and palm trees"
+                loading="lazy"
+              />
+              <figcaption>Ocean Drive</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/Jason_and_Lucia_02_landscape.0cosv-uzbpt91.png"
+                alt="CZ and HeYi artwork"
+                loading="lazy"
+              />
+              <figcaption>The Crew</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/Vice_City_09.0~ng.c8ack3fp.png"
+                alt="Binance City downtown at sunset"
+                loading="lazy"
+              />
+              <figcaption>Sunset Strip</figcaption>
+            </figure>
+            <figure class="gallery-item reveal gallery-item--tall">
+              <img
+                src="/media/Lucia_Caminos_04.04kb_4ubn3wn.png"
+                alt="Lucia Caminos in Binance City"
+                loading="lazy"
+              />
+              <figcaption>CZ</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/Vice_City_Postcard_square.0-3vs90osir2l.png"
+                alt="Binance City postcard artwork"
+                loading="lazy"
+              />
+              <figcaption>Postcard</figcaption>
+            </figure>
+            <figure class="gallery-item reveal">
+              <img
+                src="/media/trailerDesktop.0uzwsiu0bz4qr.png"
+                alt="GTA VI cinematic trailer scene"
+                loading="lazy"
+              />
+              <figcaption>Cinematic</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOKENOMICS -->
+      <section class="section tokenomics" id="tokenomics">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">// TOKENOMICS</span>
+            <h2 class="section-title">
+              The <span class="gradient-text">Heist</span> Breakdown
+            </h2>
+          </div>
+          <div class="tokenomics-layout">
+            <div class="tokenomics-visual reveal">
+              <div class="tokenomics-image-wrap">
+                <img
+                  src="/media/Jason_and_Lucia_Motel_landscape.08edvuwtm-20v1.png"
+                  alt="CZ and HeYi — the heist begins"
+                  loading="lazy"
+                />
+                <div class="tokenomics-image-glow"></div>
+              </div>
+              <div class="donut" aria-hidden="true">
+                <svg viewBox="0 0 200 200">
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="rgba(255,255,255,0.05)"
+                    stroke-width="24"
+                  />
+                  <circle
+                    cx="100"
+                    cy="100"
+                    r="80"
+                    fill="none"
+                    stroke="url(#donutGrad)"
+                    stroke-width="24"
+                    stroke-dasharray="502.65"
+                    stroke-dashoffset="0"
+                    class="donut-ring"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="donutGrad"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#F0B90B" />
+                      <stop offset="50%" stop-color="#1E2329" />
+                      <stop offset="100%" stop-color="#0B0E11" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="donut-center">
+                  <span class="donut-ticker">$BTA6</span>
+                  <span class="donut-supply">1B Supply</span>
+                </div>
+              </div>
+            </div>
+            <div class="tokenomics-cards">
+              <div class="token-row reveal">
+                <span class="token-key">Token Name</span>
+                <span class="token-val">币安开发世界</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Ticker</span>
+                <span class="token-val highlight">$BTA6</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Chain</span>
+                <span class="token-val">BSC</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Total Supply</span>
+                <span class="token-val">1,000,000,000</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Buy / Sell Tax</span>
+                <span class="token-val">0% / 0%</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Liquidity</span>
+                <span class="token-val burnt">🔒 Locked</span>
+              </div>
+              <div class="token-row reveal">
+                <span class="token-key">Ownership</span>
+                <span class="token-val burnt">✓ Renounced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTRACT -->
+      <section class="section contract" id="contract">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">// CONTRACT</span>
+            <h2 class="section-title">
+              Verify <span class="gradient-text">On-Chain</span>
+            </h2>
+          </div>
+          <div class="contract-box glass-card reveal">
+            <label class="contract-label" for="contractAddress"
+              >Contract Address</label
+            >
+            <div class="contract-input-wrap">
+              <input
+                type="text"
+                id="contractAddress"
+                class="contract-input"
+                value="0xcomingsoon"
+                readonly
+                aria-label="Contract address"
+              />
+              <button
+                class="btn btn-copy"
+                id="copyBtn"
+                aria-label="Copy contract address"
+              >
+                <span class="copy-icon">📋</span>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+            <p class="contract-note">
+              Always DYOR. Verify the contract address before swapping.
+            </p>
+            <div class="contract-badges">
+              <span class="badge">✓ Verified</span>
+              <span class="badge">✓ LP Locked</span>
+              <span class="badge">✓ Renounced</span>
+            </div>
+            <div class="contract-actions">
+              <a
+                href="https://bscscan.com/address/0xcomingsoon"
+                class="btn btn-secondary"
+                data-link="bscscan"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on BSCscan</a
+              >
+              <a
+                href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon"
+                class="btn btn-primary btn-glow"
+                data-link="uniswap"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Buy $BTA6</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="section roadmap" id="roadmap">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">// ROADMAP</span>
+            <h2 class="section-title">
+              The <span class="gradient-text">Criminal</span> Timeline
+            </h2>
+          </div>
+          <div class="roadmap-track">
+            <div class="roadmap-line" aria-hidden="true"></div>
+            <article class="roadmap-item reveal">
+              <div class="roadmap-marker">01</div>
+              <div class="roadmap-card glass-card">
+                <div class="roadmap-thumb">
+                  <img
+                    src="/media/Vice_City_03.0nqz~lrqdmlze.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="roadmap-body">
+                  <span class="roadmap-phase">Phase 1 — The Setup</span>
+                  <h3>Token Launch & LP Burn</h3>
+                  <p>
+                    Deploy on BSC. Locked liquidity. Renounce contract. Post
+                    the CA in every group chat known to man.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="roadmap-item reveal">
+              <div class="roadmap-marker">02</div>
+              <div class="roadmap-card glass-card">
+                <div class="roadmap-thumb">
+                  <img
+                    src="/media/mediaDesktop.06xrr56h6f14r.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="roadmap-body">
+                  <span class="roadmap-phase"
+                    >Phase 2 — Binance City Takeover</span
+                  >
+                  <h3>Meme Marketing Blitz</h3>
+                  <p>
+                    CT raids. TikTok edits. Influencer partnerships. Make $BTA6
+                    trend harder than a wanted level 5 chase.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="roadmap-item reveal">
+              <div class="roadmap-marker">03</div>
+              <div class="roadmap-card glass-card">
+                <div class="roadmap-thumb">
+                  <img
+                    src="/media/Vice_City_06.0_tdmr3u9w84x.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="roadmap-body">
+                  <span class="roadmap-phase">Phase 3 — CEX Listings</span>
+                  <h3>Exchange Listings</h3>
+                  <p>
+                    CEX applications. CoinGecko & CMC listings. The heist goes
+                    mainstream.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="roadmap-item reveal">
+              <div class="roadmap-marker">04</div>
+              <div class="roadmap-card glass-card">
+                <div class="roadmap-thumb">
+                  <img
+                    src="/media/Vice_City_Postcard_ultrawide.139b_8_c8jx~6.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="roadmap-body">
+                  <span class="roadmap-phase">Phase 4 — To The Moon</span>
+                  <h3>Leonida Expansion</h3>
+                  <p>
+                    NFT collection. Merch drop. Maybe a yacht. We're not
+                    financial advisors — we're criminals with diamond hands.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMUNITY -->
+      <section class="section community" id="community">
+        <div class="community-bg parallax-bg" data-speed="0.25">
+          <img
+            src="/media/poster_full.10y8e6nwjx9t5.jpg?akim=1&imwidth=2560"
+            alt=""
+            loading="lazy"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="container">
+          <div class="community-box reveal">
+            <div class="community-glow" aria-hidden="true"></div>
+            <span class="section-tag">// JOIN THE CREW</span>
+            <h2 class="section-title">
+              Enter <span class="gradient-text">Binance City</span>
+            </h2>
+            <p class="community-text">
+              The streets don't sleep. Neither does this community. Join the
+              crew, share the memes, ride the wave.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://x.com/gta_vi_eth"
+                class="social-btn"
+                aria-label="Follow on X (Twitter)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>𝕏</span> Twitter
+              </a>
+              <a
+                href="https://t.me"
+                class="social-btn"
+                aria-label="Join Telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>✈</span> Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUY -->
+      <section class="section buy" id="buy">
+        <div class="buy-bg parallax-bg" data-speed="0.2">
+          <img
+            src="/media/Vice_City_Postcard_ultrawide.139b_8_c8jx~6.png"
+            alt=""
+            loading="lazy"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="buy-overlay"></div>
+        <div class="container">
+          <div class="buy-box reveal">
+            <h2 class="buy-title">
+              Ready to <span class="gradient-text">Pull the Job?</span>
+            </h2>
+            <p>
+              Swap BNB for $BTA6 on Pancakeswap. Slippage recommended: 5–10% for
+              launch volatility.
+            </p>
+            <a
+              href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon"
+              class="btn btn-primary btn-glow btn-large"
+              id="buyBtn"
+              data-link="uniswap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy $BTA6
+            </a>
+            <p class="buy-disclaimer">
+              Not financial advice. Meme coins are high risk. Only invest what
+              you can afford to lose.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">$BTA6</span>
+          <p>
+            币安开发世界 — Unofficial meme token. Not affiliated with
+            Rockstar Games or Take-Two Interactive.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#contract">Contract</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#community">Community</a>
+          <a
+            href="https://x.com/gta_vi_eth"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <a
+            href="https://t.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Telegram</a
+          >
+        </div>
+        <p class="footer-copy">&copy; 2026 $BTA6. All memes reserved.</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
